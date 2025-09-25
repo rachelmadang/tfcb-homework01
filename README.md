@@ -1,83 +1,30 @@
-# Homework 1
+# Description
 
-This homework will assess your ability to use GitHub, organize projects, and apply tidy data principles, and represents content covered in lecture 3. Fill this README.md document with your answers below and upload this file to Canvas.
+This repository contains files that were once part of a `messy-project-directory`. These files have since been renamed and reorganized into the following subfolders:
 
-## Problem 1
+* [`data`](#data)
+* [`images`](#images)
+* [`source_code`](#source-code)
 
-**15 points**
+Additional descriptions of contents can be found by scrolling below or by selecting above to skip to pertinent sections.
 
-Make a GitHub account and populate your bio by including your research interests, place of work, location, professional webpage (or science-focused twitter account!). Here's an example [github.com/trvrb](https://github.com/trvrb/).
+## Data
 
-_Include the link to your GitHub profile here._
+Contains data from the 2013 and 2014 field seasons.
 
-## Problem 2
+> **Note**: Multiple versions are included in this repo. For those that demonstrate tidy data principles, see those with keyword *tidy* included in filename.
 
-**15 points**
+## Images
 
-This question assesses your ability to track a project using Git.
+Contains images of ant specimens from the California Academy of Sciences Entomology department. For further reading on ants (or other insects and arachnids) please see [their website](https://www.calacademy.org/scientists/entomology) or try [Wikipedia](https://en.wikipedia.org/wiki/Entomology).
 
-Download the course files with the following link: [github.com/FredHutch/tfcb_2024/archive/refs/heads/main.zip](https://github.com/FredHutch/tfcb_2023/archive/refs/heads/main.zip). Copy the contents of `homeworks/homework01/messy-project-directory/` to a new directory on your computer named `tfcb-homework01`.
+![](./images/casent0172345_rhytidoponera_metallica.jpg)
 
-Open the above `tfcb-homework01` in VSCode and "Initialize Repository" in the Source Control Tab. 
+## Source code
 
-Create an initial commit that adds all the local files in `tfcb-homework01`:
-- `Survey Data.xlsx`
-- `get Species_list.py`
-- etc...
-
-You do not need to submit anything for this problem; your success will be evaluated in the next problem.
-
-## Problem 3
-
-**15 points**
-
-This question assesses your ability to publish projects to GitHub.
-
-Create a new repository on GitHub called `tfcb-homework01`.
-Make sure to set this to be a "public" repository.
-The resulting repository can now be accessed at `github.com/{your_username}/tfcb-homework01`. 
-If necessary, you can make this repository public by going to "Settings" from this page.
-
-Push the local `tfcb-homework01` to GitHub.
-Do this by picking `Push` from the `...` icon in the Source Control Tab of VSCode.
-The first time you try doing this, you will get an error asking you to configure your "Remote". 
-Use the URL of the GitHub repository you created above to configure the Remote.
-Now you should be able to push any further changes to your repository.
-
-_Include the link to your `tfcb-homework01` GitHub repository here._
-
-## Problem 4
-
-**15 points**
-
-This question assesses your ability to organize files and directories associated with research projects.
-
-Organize files into a more consistent structure. Group images into a `images/` directory. Separate source code and data. Rename files to remove spaces and improve consistency. Commit changes and publish to your public GitHub repository.
-
-_Include the link to your `tfcb-homework01` GitHub repository here._
-
-## Problem 5
-
-**20 points**
-
-This question assesses your ability to write a README with Markdown formatting.
-
-Create a file called `README.md` and populate with Markdown. Demonstrate headers, lists, links, embedded images (by linking to images contained in the directory) and tables in this readme.
-
-Commit this file and publish to your public GitHub repository.
-
-_Include the link to your `README.md` here._
-
-## Problem 6
-
-**20 points**
-
-This question assesses your understanding of tidy data principles.
-
-Clean up the file that was originally named `Survey Data.xlsx`. Some points to remember: aim for a single tidy data frame in a single tab, don't use formatting as data, use preferred date format, properly record null values.
-
-Export this as a tab-delimited `.csv` text file with Unix line endings.
-
-Commit the modified `.xlsx` file and the `.csv` file and publish to your public GitHub repository.
-
-_Include the link to your `.csv` file on GitHub here._
+| **Scripts** | **Description** |
+|-----------|---------|
+|`get_dataset.py`|Downloads a dataset|
+|`get_species_list.py`|Creates a CSV file with species that are imaged the most from [AntWeb](https://www.antweb.org)|
+|`main.py`|Initializes, trains and evaluates a model|
+|`predict_images.py`|Loads and compiles model with trained weights to predict species from an image|

@@ -12,7 +12,7 @@ Additional descriptions of contents can be found by scrolling below or by select
 
 Contains data collected during the 2013 and 2014 field seasons.
 
-> **Note**: Multiple versions are included in this repo. For those that demonstrate tidy data principles, see those with keyword *tidy* included in filename.
+> **Note**: Multiple file formats of the same data are included in this repo.
 
 ## Images
 

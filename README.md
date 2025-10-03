@@ -10,7 +10,7 @@ Additional descriptions of contents can be found by scrolling below or by select
 
 ## Data
 
-Contains data collected during the 2013 and 2014 field seasons.
+Contains data collected from various field seasons.
 
 > **Note**: Multiple file formats of the same data are included in this repo.
 
